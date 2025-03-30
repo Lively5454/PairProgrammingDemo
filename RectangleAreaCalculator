@@ -2,13 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.mycompany.rectangleareacalculator;
+package com.mycompany.rectanglecalculator;
 
 /**
  *
  * @author HP
  */
-public class RectangleAreaCalculator {
+ --enable-native-access=ALL-UNNAMED
+public class RectangleCalculator {
     public static double calculateArea(double length, double width) {
         return length *width;
     }
@@ -18,4 +19,7 @@ public class RectangleAreaCalculator {
         double width = 3.0;
         System.out.println("Area of the rectangle:" + calculateArea(length, width));
     }
+
+public static double calculatePerimeter(double length, double width) {
+  return 2 * (length + width);
 }
